@@ -21,6 +21,7 @@ jobs:
           filters: |
             src:
               - 'packages/i18nify-js/**'
+              - 'yarn.lock'   # trigger dep-bump PRs so tests actually run (verification only, steps unchanged)
 
   coverage:
     name: CodeCov analysis on coverage
